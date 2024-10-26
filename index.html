@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Profil Pribadi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px; 
+            margin: 0 auto;
+            padding: 20px;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; 
+            margin-bottom: 20px; 
+        }
+        .profile-image, .profile-video {
+            flex: 1; 
+            min-width: 300px; 
+            margin-right: 20px;
+        }
+        .profile-video {
+            margin-right: 0; 
+        }
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .skills-table th, .skills-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-image">
+            <img src="fotoaing.jpg" alt="Foto Profil">
+        </div>
+        
+        <div class="profile-video">
+            <video controls>
+                <source src="Tokyo Underground..mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <!-- tentang aing -->
+    <h2>Tentang Saya</h2>
+    <p>Halo! Saya Ahmad Syarifullah Daulay, Mahasiswa Jurusan S1 Teknologi Informasi Fakultas Informatika Telkom University Jakarta, dan saya aktif di beberapa organisasi.</p>
+
+    <!-- ini tabel keahlian yak -->
+    <h2>Keterampilan</h2>
+    <table class="skills-table">
+        <tr>
+            <th>Keterampilan</th>
+            <th>Tingkat</th>
+        </tr>
+        <tr>
+            <td>HTML/CSS</td>
+            <td>Mahir</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Menengah</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Pemula</td>
+        </tr>
+    </table>
+
+    <!-- ini buat ngirim pesan yak -->
+    <h2>Hubungi Saya</h2>
+    <form>
+        <label for="name">Nama:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Pesan:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+        
+        <input type="submit" value="Kirim">
